@@ -4,55 +4,41 @@
     <link rel="icon" type="image/png" href="favicon-arancione.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campetto | Flick and Score</title>
+    <title>CAMPETTO Flick and Score</title>
     <meta name="description" content="Campetto - Flick and Score. Coming soon.">
     <meta name="keywords" content="Campetto, Flick and Score">
     <style>
-        @font-face {
-            font-family: 'Outfit';
-            src: url('Outfit-Regular.ttf') format('truetype'),
-        }
+        @font-face { font-family: 'Outfit'; src: url('Outfit-Regular.ttf') format('truetype'); }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Outfit', sans-serif;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-            overflow: hidden;
-        }
-        .coming-soon { font-size: 3rem; font-weight: 600; letter-spacing: 2px; display: flex; user-select: none; }
+        body { font-family: 'Outfit', sans-serif; background-color: #ffffff; display: flex; justify-content: center; align-items: center; min-height: 100vh; text-align: center; position: relative; overflow: hidden; }
+        .center-box { display: flex; flex-direction: column; align-items: center; margin-top: -40px; }
+        .coming-soon { font-size: 3rem; font-weight: 600; letter-spacing: 2px; display: flex; justify-content: center; user-select: none; }
         .coming-soon span { display: inline-block; animation: waveColor 12s infinite ease-in-out; }
         .coming-soon span.space { width: 15px; }
-        
+        .email-link { margin-top: 15px; font-size: 1.1rem; color: #444444; text-decoration: none; letter-spacing: 1px; transition: color 0.3s ease; }
+        .email-link:hover { color: #F47E07; }
         @keyframes waveColor {
-            /* 0s - Inizio: Nero. Arriva la ola e diventa Arancione */
             0% { transform: translateY(0); color: #000000; }
             4% { transform: translateY(-15px); color: #F47E07; }
             8%, 25% { transform: translateY(0); color: #F47E07; }
-            
-            /* 3s - Seconda ola: Torna Nero */
             29% { transform: translateY(-15px); color: #000000; }
             33%, 50% { transform: translateY(0); color: #000000; }
-            
-            /* 6s - Terza ola: Diventa Azzurro */
             54% { transform: translateY(-15px); color: #01BCC8; }
             58%, 75% { transform: translateY(0); color: #01BCC8; }
-            
-            /* 9s - Quarta ola: Torna Nero per chiudere il loop */
             79% { transform: translateY(-15px); color: #000000; }
             83%, 100% { transform: translateY(0); color: #000000; }
         }
-        
-        @media (max-width: 480px) { .coming-soon { font-size: 2rem; } .coming-soon span.space { width: 10px; } }
+        @media (max-width: 480px) { 
+            .coming-soon { font-size: 2rem; } .coming-soon span.space { width: 10px; } 
+            .email-link { font-size: 1rem; } .footer { gap: 15px; bottom: 20px; } .footer a { font-size: 0.8rem; }
+        }
     </style>
 </head>
 <body>
-
-    <h1 class="coming-soon" id="text">Coming soon</h1>
-
+    <div class="center-box">
+        <h1 class="coming-soon" id="text">Coming soon</h1>
+        <a href="mailto:hello@playcampetto.com" class="email-link">hello@playcampetto.com</a>
+    </div>
     <script>
         const container = document.getElementById('text');
         const text = container.innerText;
@@ -64,6 +50,5 @@
             container.appendChild(span);
         });
     </script>
-
 </body>
 </html>
