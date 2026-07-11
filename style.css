@@ -1,0 +1,44 @@
+@font-face { font-family: 'Outfit'; src: url('Outfit-Regular.ttf') format('truetype'); }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Outfit', sans-serif; background-color: #ffffff; display: flex; justify-content: center; align-items: center; min-height: 100vh; text-align: center; position: relative; overflow: hidden; }
+
+/* Selettore Lingua */
+.language-dropdown { position: absolute; top: 25px; right: 30px; z-index: 10; }
+.dropbtn { background: none; border: none; font-size: 1.1rem; font-weight: 600; cursor: pointer; color: #000; }
+.dropbtn:hover { color: #F47E07; }
+.dropdown-content { display: none; position: absolute; right: 0; background: #fff; box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-radius: 4px; padding: 10px 0; }
+.dropdown-content a { color: #000; padding: 8px 16px; text-decoration: none; display: block; font-weight: 600; font-size: 1rem; }
+.dropdown-content a:hover { color: #F47E07; background: #f9f9f9; }
+.language-dropdown:hover .dropdown-content { display: block; }
+.dropdown-content.show { display: block; }
+
+/* Contenuto Centrale */
+.center-box { display: flex; flex-direction: column; align-items: center; margin-top: -40px; }
+.coming-soon { font-size: 3rem; font-weight: 600; letter-spacing: 2px; display: flex; justify-content: center; user-select: none; }
+.coming-soon span { display: inline-block; animation: waveColor 12s infinite ease-in-out; }
+.coming-soon span.space { width: 15px; }
+
+/* Link Email */
+.email-link { margin-top: 15px; font-size: 1.1rem; color: #444444; text-decoration: none; letter-spacing: 1px; transition: color 0.3s ease; }
+.email-link:hover { color: #F47E07; }
+
+/* Animazione Testo */
+@keyframes waveColor {
+    0% { transform: translateY(0); color: #000000; }
+    4% { transform: translateY(-15px); color: #F47E07; }
+    8%, 25% { transform: translateY(0); color: #F47E07; }
+    29% { transform: translateY(-15px); color: #000000; }
+    33%, 50% { transform: translateY(0); color: #000000; }
+    54% { transform: translateY(-15px); color: #01BCC8; }
+    58%, 75% { transform: translateY(0); color: #01BCC8; }
+    79% { transform: translateY(-15px); color: #000000; }
+    83%, 100% { transform: translateY(0); color: #000000; }
+}
+
+@media (max-width: 480px) { 
+    .coming-soon { font-size: 2rem; } 
+    .coming-soon span.space { width: 10px; } 
+    .email-link { font-size: 1rem; }
+    .language-selector { top: 15px; right: 20px; gap: 10px; }
+    .language-selector a { font-size: 0.9rem; }
+}

@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- EN -->
   <url>
-    <loc>https://playcampetto.com/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://playcampetto.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://playcampetto.com/it/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://playcampetto.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://playcampetto.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playcampetto.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://playcampetto.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://playcampetto.com/en/" />
+  </url>
+  <!-- IT -->
+  <url>
+    <loc>https://playcampetto.com/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://playcampetto.com/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://playcampetto.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://playcampetto.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playcampetto.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://playcampetto.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://playcampetto.com/en/" />
+  </url>
+  <!-- DE -->
+  <url>
+    <loc>https://playcampetto.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://playcampetto.com/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://playcampetto.com/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://playcampetto.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playcampetto.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://playcampetto.com/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://playcampetto.com/en/" />
+  </url>
+  <!-- ES -->
+  <url>
+    <loc>https://playcampetto.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://playcampetto.com/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://playcampetto.com/it/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://playcampetto.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playcampetto.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://playcampetto.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://playcampetto.com/en/" />
+  </url>
+  <!-- FR -->
+  <url>
+    <loc>https://playcampetto.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://playcampetto.com/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://playcampetto.com/it/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://playcampetto.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://playcampetto.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playcampetto.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://playcampetto.com/en/" />
   </url>
 </urlset>

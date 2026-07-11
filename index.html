@@ -2,66 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAMPETTO Flick and Score</title>
-    <meta name="description" content="The new board game that tests your dexterity and strategy. Coming soon to Europe.">
-    <meta name="keywords" content="Campetto, Flick and Score, gioco da tavolo, abilità, strategia, board game, skill game, jeu de société, Brettspiel, juego de mesa, gioco di abilità, dexterity game, flicking game, gioco calcio, tabletop soccer, tabletop strategy, table football, calcio da tavolo, soccer board game, Mattia Bauleo">
-    <meta name="geo.region" content="EU">
-    <meta name="geo.country" content="IT"> 
-    <meta name="robots" content="index, follow">    
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <meta property="og:title" content="CAMPETTO Flick and Score">
-    <meta property="og:description" content="The new board game that tests your dexterity and strategy. Coming soon to Europe.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://playcampetto.com/">
-
-    <style>
-        @font-face { font-family: 'Outfit'; src: url('Outfit-Regular.ttf') format('truetype'); }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Outfit', sans-serif; background-color: #ffffff; display: flex; justify-content: center; align-items: center; min-height: 100vh; text-align: center; position: relative; overflow: hidden; }
-        .center-box { display: flex; flex-direction: column; align-items: center; margin-top: -40px; }
-        .coming-soon { font-size: 3rem; font-weight: 600; letter-spacing: 2px; display: flex; justify-content: center; user-select: none; }
-        .coming-soon span { display: inline-block; animation: waveColor 12s infinite ease-in-out; }
-        .coming-soon span.space { width: 15px; }
-        .email-link { margin-top: 15px; font-size: 1.1rem; color: #444444; text-decoration: none; letter-spacing: 1px; transition: color 0.3s ease; }
-        .email-link:hover { color: #F47E07; }
-        @keyframes waveColor {
-            0% { transform: translateY(0); color: #000000; }
-            4% { transform: translateY(-15px); color: #F47E07; }
-            8%, 25% { transform: translateY(0); color: #F47E07; }
-            29% { transform: translateY(-15px); color: #000000; }
-            33%, 50% { transform: translateY(0); color: #000000; }
-            54% { transform: translateY(-15px); color: #01BCC8; }
-            58%, 75% { transform: translateY(0); color: #01BCC8; }
-            79% { transform: translateY(-15px); color: #000000; }
-            83%, 100% { transform: translateY(0); color: #000000; }
-        }
-        @media (max-width: 480px) { 
-            .coming-soon { font-size: 2rem; } .coming-soon span.space { width: 10px; } 
-            .email-link { font-size: 1rem; } .footer { gap: 15px; bottom: 20px; } .footer a { font-size: 0.8rem; }
-        }
-    </style>
+    <script>
+        (function() {
+            var lang = navigator.language || navigator.userLanguage;
+            var langCode = lang.split('-')[0];
+            var supported = ['it', 'de', 'es', 'fr', 'en'];
+            
+            if (supported.includes(langCode)) {
+                window.location.href = '/' + langCode + '/';
+            } else {
+                window.location.href = '/en/';
+            }
+        })();
+    </script>
 </head>
 <body>
-    <div class="center-box">
-        <h1 class="coming-soon" id="text">Coming soon</h1>
-        <a href="mailto:hello@playcampetto.com" class="email-link">hello@playcampetto.com</a>
-    </div>
-    <script>
-        const container = document.getElementById('text');
-        const text = container.innerText;
-        container.innerHTML = '';
-        [...text].forEach((char, i) => {
-            const span = document.createElement('span');
-            if (char === ' ') { span.classList.add('space'); } 
-            else { span.innerText = char; span.style.animationDelay = `${i * 0.08}s`; }
-            container.appendChild(span);
-        });
-    </script>
+    <p>Redirecting to your language... <a href="/en/">Click here if you are not redirected.</a></p>
 </body>
 </html>
