@@ -15,3 +15,13 @@ container.innerHTML = '';
 document.querySelector('.dropbtn').addEventListener('click', function() {
     document.querySelector('.dropdown-content').classList.toggle('show');
 });
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      console.log('Service Worker registrato con successo:', registration.scope);
+    }, function(err) {
+      console.log('Registrazione Service Worker fallita:', err);
+    });
+  });
+}
