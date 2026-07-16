@@ -1,17 +1,23 @@
 {
-  "name": "PlayCampetto",
-  "short_name": "Campetto",
-  "icons": [
-    {
-      "src": "/assets/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/assets/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "display": "standalone"
+    "name": "CAMPETTO Flick and Score",
+    "short_name": "playcampetto",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#ffffff",
+    "description": "Coming soon",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/app_launcher_icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/app_launcher_icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
