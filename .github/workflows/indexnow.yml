@@ -1,0 +1,28 @@
+name: IndexNow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send IndexNow Request
+        run: |
+          curl -X POST \
+            "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "playcampetto.com",
+              "key": "f6e34834fe1d403ea1fb20365ee5c537",
+              "keyLocation": "https://playcampetto.com/f6e34834fe1d403ea1fb20365ee5c537.txt",
+              "urlList": [
+                  "https://playcampetto.com/",
+                  "https://playcampetto.com/it/",
+                  "https://playcampetto.com/en/",
+                  "https://playcampetto.com/de/",
+                  "https://playcampetto.com/fr/",
+                  "https://playcampetto.com/es/"
+              ]
+            }'
